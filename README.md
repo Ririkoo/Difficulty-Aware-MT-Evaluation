@@ -48,6 +48,8 @@ For reproducing the the WMT19 En-De Top-6 scoring results, you can use the provi
 ```sh
 WMT19_DATA_PATH=example_data/wmt19-ende
 
+mkdir wmt2019_res/en-de/topk
+
 da-bert-score --with_diff --batch_size 256 --lang de --ref ${WMT19_DATA_PATH}/ref/newstest2019-ende-ref.de \
     --cand_list ${WMT19_DATA_PATH}/sys/en-de/newstest2019.Facebook_FAIR.6862.en-de ${WMT19_DATA_PATH}/sys/en-de/newstest2019.Microsoft-WMT19-sentence_document.6974.en-de ${WMT19_DATA_PATH}/sys/en-de/newstest2019.Microsoft-WMT19-document-level.6808.en-de ${WMT19_DATA_PATH}/sys/en-de/newstest2019.MSRA.MADL.6926.en-de ${WMT19_DATA_PATH}/sys/en-de/newstest2019.UCAM.6731.en-de ${WMT19_DATA_PATH}/sys/en-de/newstest2019.NEU.6763.en-de \
     --save_path wmt2019_res/en-de/topk
