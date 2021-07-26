@@ -30,7 +30,7 @@ pip install --editable .
 ```
 
 ### Usage
-This package not only preserves the original features of BERTScore (ver.0.3.7) but also can coexist with BERTScore.
+This package not only preserves the original functions of BERTScore (ver.0.3.7) but also can coexist with BERTScore.
 
 #### Parameters
 | Parameters  | Descriptions                                                 |
