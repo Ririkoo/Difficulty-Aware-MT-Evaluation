@@ -43,7 +43,7 @@ Please refer to [BERTScore](https://github.com/Tiiiger/bert_score) for other par
 
 
 #### CLI Example
-For reproducing the the WMT19 En-De Top-6 scoring results, you can use it as follows:
+For reproducing the the WMT19 En-De Top-6 scoring results, you can use the provided example files and CLI tool as follows:
 
 ```sh
 WMT19_DATA_PATH=example_data/wmt19-ende
@@ -52,6 +52,8 @@ da-bert-score --with_diff --batch_size 256 --lang de --ref ${WMT19_DATA_PATH}/re
     --cand_list ${WMT19_DATA_PATH}/sys/en-de/newstest2019.Facebook_FAIR.6862.en-de ${WMT19_DATA_PATH}/sys/en-de/newstest2019.Microsoft-WMT19-sentence_document.6974.en-de ${WMT19_DATA_PATH}/sys/en-de/newstest2019.Microsoft-WMT19-document-level.6808.en-de ${WMT19_DATA_PATH}/sys/en-de/newstest2019.MSRA.MADL.6926.en-de ${WMT19_DATA_PATH}/sys/en-de/newstest2019.UCAM.6731.en-de ${WMT19_DATA_PATH}/sys/en-de/newstest2019.NEU.6763.en-de \
     --save_path wmt2019_res/en-de/topk
 ```
+For reprocuding other results, please download the WMT19 raw data from the [official website](https://www.statmt.org/wmt19/results.html). 
+
 This implementation follows the [default behaviors (models, layers)](https://github.com/Tiiiger/bert_score#default-behavior) of BERTScore when evaluating the different languages.
 
 #### Variant
